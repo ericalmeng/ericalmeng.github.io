@@ -349,6 +349,7 @@ body {
     -o-animation-delay: 1.2s;
     animation: fadein .8s both;
     animation-delay: 1.20s;
+    margin-bottom: 24px;
 }
 
 .contact h1{
