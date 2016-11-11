@@ -8,6 +8,23 @@ body {
     background-color: #fcfcfc;
 }
 
+@-webkit-keyframes opac {
+  0%   { opacity: 0; }
+  100% { opacity: 0.7; }
+}
+@-moz-keyframes opac {
+  0%   { opacity: 0; }
+  100% { opacity: 0.7; }
+}
+@-o-keyframes opac {
+  0%   { opacity: 0; }
+  100% { opacity: 0.7; }
+}
+@keyframes opac {
+  0%   { opacity: 0; }
+  100% { opacity: 0.7; }
+}
+
 @-webkit-keyframes fadein {
   0%   { opacity: 0; }
   100% { opacity: 1; }
@@ -162,59 +179,59 @@ body {
     -moz-transition: background 0.3s, color 0.3s;
     -o-transition: background 0.3s, color 0.3s;
     transition: background 0.3s, color 0.3s;
-    opacity: 0.7;
+    /*opacity: 0.7;*/
 }
 
-.project-box:hover {
+/*.project-box:hover {
     -webkit-transition: linear 0.2s;
     -moz-transition: linear 0.2s;
     -o-transition: linear 0.2s;
     transition: linear 0.2s;
-    opacity: 1;
     cursor: pointer;
-}
+    opacity: 1;
+}*/
 
 .project-box.box1 {
-    -webkit-animation: fadein .8s backwards;
+    -webkit-animation: opac .8s both;
     -webkit-animation-delay: .40s;
-    -moz-animation: fadein .8s backwards;
+    -moz-animation: opac .8s both;
     -moz-animation-delay: .4s;
-    -o-animation: fadein .8s backwards;
+    -o-animation: opac .8s both;
     -o-animation-delay: .4s;
-    animation: fadein .8s backwards;
+    animation: opac .8s both;
     animation-delay: .40s;
 }
 
 .project-box.box2 {
-    -webkit-animation: fadein .8s backwards;
+    -webkit-animation: opac .8s both;
     -webkit-animation-delay: .80s;
-    -moz-animation: fadein .8s backwards;
+    -moz-animation: opac .8s both;
     -moz-animation-delay: .8s;
-    -o-animation: fadein .8s backwards;
+    -o-animation: opac .8s both;
     -o-animation-delay: .8s;
-    animation: fadein .8s backwards;
+    animation: opac .8s both;
     animation-delay: .80s;
 }
 
 .project-box.box3 {
-    -webkit-animation: fadein .8s backwards;
+    -webkit-animation: opac .8s both;
     -webkit-animation-delay: 1.20s;
-    -moz-animation: fadein .8s backwards;
+    -moz-animation: opac .8s both;
     -moz-animation-delay: 1.2s;
-    -o-animation: fadein .8s backwards;
+    -o-animation: opac .8s both;
     -o-animation-delay: 1.2s;
-    animation: fadein .8s backwards;
+    animation: opac .8s both;
     animation-delay: 1.20s;
 }
 
 .project-box.box4 {
-    -webkit-animation: fadein .8s backwards;
+    -webkit-animation: opac .8s both;
     -webkit-animation-delay: 1.50s;
-    -moz-animation: fadein .8s backwards;
+    -moz-animation: opac .8s both;
     -moz-animation-delay: 1.5s;
-    -o-animation: fadein .8s backwards;
+    -o-animation: opac .8s both;
     -o-animation-delay: 1.5s;
-    animation: fadein .8s backwards;
+    animation: opac .8s both;
     animation-delay: 1.50s;
     margin-bottom: 25px;
 }
