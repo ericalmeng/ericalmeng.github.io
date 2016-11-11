@@ -5,8 +5,12 @@ $(document).ready(function() {
  	$(".home-social_media").addClass("clear");
 
  	//hovering for project
+	$(".box1").one('animationend webkitAnimationEnd oAnimationEnd oanimationend MSAnimationEnd', 
+	function() {
+	 	$(this).removeClass("box1");
+	})
+
 	$(".project-box").hover(function() {
-		$(this).removeClass("box1");
 		$(this).removeClass("box2");
 		$(this).removeClass("box3");
 		$(this).removeClass("box4");
