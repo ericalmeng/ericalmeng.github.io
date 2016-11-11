@@ -132,7 +132,10 @@ body {
     color: rgba(58,71,80,.7);
     font-size: 16px;
     line-height: 1.7;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* css for projects */
