@@ -147,47 +147,74 @@ body {
     position: relative;
 }
 
-.box1 {
-    -webkit-animation: fadein .8s both;
+.project-box {
+    margin-top: 50px;
+    height: 210px;
+    width: 100%;
+    background-color: #fdfdfd;
+    display: inline-block;
+    text-align: center;
+    border-radius: 35px;
+    border: 1px dashed;
+    border-left: 7px solid;
+    border-color: #535353;
+    -webkit-transition: background 0.3s, color 0.3s;
+    -moz-transition: background 0.3s, color 0.3s;
+    -o-transition: background 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s;
+    opacity: 0.7;
+}
+
+.project-box:hover {
+    -webkit-transition: linear 0.2s;
+    -moz-transition: linear 0.2s;
+    -o-transition: linear 0.2s;
+    transition: linear 0.2s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.project-box.box1 {
+    -webkit-animation: fadein .8s backwards;
     -webkit-animation-delay: .40s;
-    -moz-animation: fadein .8s both;
+    -moz-animation: fadein .8s backwards;
     -moz-animation-delay: .4s;
-    -o-animation: fadein .8s both;
+    -o-animation: fadein .8s backwards;
     -o-animation-delay: .4s;
-    animation: fadein .8s both;
+    animation: fadein .8s backwards;
     animation-delay: .40s;
 }
 
-.box2 {
-    -webkit-animation: fadein .8s both;
+.project-box.box2 {
+    -webkit-animation: fadein .8s backwards;
     -webkit-animation-delay: .80s;
-    -moz-animation: fadein .8s both;
+    -moz-animation: fadein .8s backwards;
     -moz-animation-delay: .8s;
-    -o-animation: fadein .8s both;
+    -o-animation: fadein .8s backwards;
     -o-animation-delay: .8s;
-    animation: fadein .8s both;
+    animation: fadein .8s backwards;
     animation-delay: .80s;
 }
 
-.box3 {
-    -webkit-animation: fadein .8s both;
+.project-box.box3 {
+    -webkit-animation: fadein .8s backwards;
     -webkit-animation-delay: 1.20s;
-    -moz-animation: fadein .8s both;
+    -moz-animation: fadein .8s backwards;
     -moz-animation-delay: 1.2s;
-    -o-animation: fadein .8s both;
+    -o-animation: fadein .8s backwards;
     -o-animation-delay: 1.2s;
-    animation: fadein .8s both;
+    animation: fadein .8s backwards;
     animation-delay: 1.20s;
 }
 
-.box4 {
-    -webkit-animation: fadein .8s both;
+.project-box.box4 {
+    -webkit-animation: fadein .8s backwards;
     -webkit-animation-delay: 1.50s;
-    -moz-animation: fadein .8s both;
+    -moz-animation: fadein .8s backwards;
     -moz-animation-delay: 1.5s;
-    -o-animation: fadein .8s both;
+    -o-animation: fadein .8s backwards;
     -o-animation-delay: 1.5s;
-    animation: fadein .8s both;
+    animation: fadein .8s backwards;
     animation-delay: 1.50s;
     margin-bottom: 25px;
 }
@@ -239,33 +266,6 @@ body {
     letter-spacing: 2px;
     max-height: 150px;
 /*    overflow: scroll;*/
-}
-
-.project-box {
-    margin-top: 50px;
-    height: 210px;
-    width: 100%;
-    background-color: #fdfdfd;
-    display: inline-block;
-    text-align: center;
-    border-radius: 35px;
-    border: 1px dashed;
-    border-left: 7px solid;
-    border-color: #535353;
-    -webkit-transition: background 0.3s, color 0.3s;
-    -moz-transition: background 0.3s, color 0.3s;
-    -o-transition: background 0.3s, color 0.3s;
-    transition: background 0.3s, color 0.3s;
-    opacity: 0.7;
-}
-
-.project-box:hover {
-    -webkit-transition: linear 0.2s;
-    -moz-transition: linear 0.2s;
-    -o-transition: linear 0.2s;
-    transition: linear 0.2s;
-    opacity: 1;
-    cursor: pointer;
 }
 
 /* css for resume */
