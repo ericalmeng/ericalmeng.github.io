@@ -180,64 +180,69 @@ body {
     -o-transition: background 0.3s, color 0.3s;
     transition: background 0.3s, color 0.3s;
     /*opacity: 0.7;*/
+    opacity: 0.7;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
-/*.project-box:hover {
-    -webkit-transition: linear 0.2s;
-    -moz-transition: linear 0.2s;
-    -o-transition: linear 0.2s;
-    transition: linear 0.2s;
-    cursor: pointer;
-    opacity: 1;
-}*/
-
-.project-box.box1 {
-    -webkit-animation: opac .8s both;
+.box1 {
+    -webkit-animation: opac .8s;
     -webkit-animation-delay: .40s;
-    -moz-animation: opac .8s both;
+    -moz-animation: opac .8s;
     -moz-animation-delay: .4s;
-    -o-animation: opac .8s both;
+    -o-animation: opac .8s;
     -o-animation-delay: .4s;
-    animation: opac .8s both;
+    animation: opac .8s;
     animation-delay: .40s;
 }
 
-.project-box.box2 {
-    -webkit-animation: opac .8s both;
+.box2 {
+    -webkit-animation: opac .8s;
     -webkit-animation-delay: .80s;
-    -moz-animation: opac .8s both;
+    -moz-animation: opac .8s;
     -moz-animation-delay: .8s;
-    -o-animation: opac .8s both;
+    -o-animation: opac .8s;
     -o-animation-delay: .8s;
-    animation: opac .8s both;
+    animation: opac .8s;
     animation-delay: .80s;
 }
 
-.project-box.box3 {
-    -webkit-animation: opac .8s both;
+.box3 {
+    -webkit-animation: opac .8s;
     -webkit-animation-delay: 1.20s;
-    -moz-animation: opac .8s both;
+    -moz-animation: opac .8s;
     -moz-animation-delay: 1.2s;
-    -o-animation: opac .8s both;
+    -o-animation: opac .8s;
     -o-animation-delay: 1.2s;
-    animation: opac .8s both;
+    animation: opac .8s;
     animation-delay: 1.20s;
 }
 
-.project-box.box4 {
-    -webkit-animation: opac .8s both;
+.box4 {
+    -webkit-animation: opac .8s;
     -webkit-animation-delay: 1.50s;
-    -moz-animation: opac .8s both;
+    -moz-animation: opac .8s;
     -moz-animation-delay: 1.5s;
-    -o-animation: opac .8s both;
+    -o-animation: opac .8s;
     -o-animation-delay: 1.5s;
-    animation: opac .8s both;
+    animation: opac .8s;
     animation-delay: 1.50s;
     margin-bottom: 25px;
 }
 
 .mg {
     margin-bottom: 25px;
+}
+
+.project-box:hover {
+    -webkit-transition: linear 0.2s;
+    -moz-transition: linear 0.2s;
+    -o-transition: linear 0.2s;
+    transition: linear 0.2s;
+    opacity: 1;
+    cursor: pointer;
 }
 
 .img-box {

@@ -5,25 +5,25 @@ $(document).ready(function() {
  	$(".home-social_media").addClass("clear");
 
  	//hovering for project
-	$(".box1").one('animationend webkitAnimationEnd oAnimationEnd oanimationend MSAnimationEnd', 
-	function() {
-	 	$(this).removeClass("box1");
-	})
+	// $(".box1").one('animationend webkitAnimationEnd oAnimationEnd oanimationend MSAnimationEnd', 
+	// function() {
+	//  	$(this).removeClass("box1");
+	// })
 
 
-	$(".project-box").hover(function() {
-		$(this).removeClass("box2");
-		$(this).removeClass("box3");
-		$(this).removeClass("box4");
-		$(this).css("-webkit-transition:", "linear 0.2s");
-		$(this).css("-moz-transition:", "linear 0.2s");
-		$(this).css("-o-transition:", "linear 0.2s");
-		$(this).css("-transition-transition:", "linear 0.2s");
-		$(this).css("opacity", "1");
-		$(this).css("cursor", "pointer");
-		}, function() {
-		$(this).css("opacity", "0.7");
-	})
+	// $(".project-box").hover(function() {
+	// 	$(this).removeClass("box2");
+	// 	$(this).removeClass("box3");
+	// 	$(this).removeClass("box4");
+	// 	$(this).css("-webkit-transition:", "linear 0.2s");
+	// 	$(this).css("-moz-transition:", "linear 0.2s");
+	// 	$(this).css("-o-transition:", "linear 0.2s");
+	// 	$(this).css("-transition-transition:", "linear 0.2s");
+	// 	$(this).css("opacity", "1");
+	// 	$(this).css("cursor", "pointer");
+	// 	}, function() {
+	// 	$(this).css("opacity", "0.7");
+	// })
 	
  	//hovering in nav
 	$(".home-title .links-container .link").hover(function() {
