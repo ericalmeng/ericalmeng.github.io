@@ -3,27 +3,6 @@ $(document).ready(function() {
 
  	//add class for social media
  	$(".home-social_media").addClass("clear");
-
- 	//hovering for project
-	// $(".box1").one('animationend webkitAnimationEnd oAnimationEnd oanimationend MSAnimationEnd', 
-	// function() {
-	//  	$(this).removeClass("box1");
-	// })
-
-
-	// $(".project-box").hover(function() {
-	// 	$(this).removeClass("box2");
-	// 	$(this).removeClass("box3");
-	// 	$(this).removeClass("box4");
-	// 	$(this).css("-webkit-transition:", "linear 0.2s");
-	// 	$(this).css("-moz-transition:", "linear 0.2s");
-	// 	$(this).css("-o-transition:", "linear 0.2s");
-	// 	$(this).css("-transition-transition:", "linear 0.2s");
-	// 	$(this).css("opacity", "1");
-	// 	$(this).css("cursor", "pointer");
-	// 	}, function() {
-	// 	$(this).css("opacity", "0.7");
-	// })
 	
  	//hovering in nav
 	$(".home-title .links-container .link").hover(function() {
@@ -37,14 +16,11 @@ $(document).ready(function() {
 
 	// when click on projects, hide everything else
 	$("#projects").click(function() {
-		// $(".project-box").addClass("box1");
-		// $(".project-box").addClass("box2");
-		// $(".project-box").addClass("box3");
-		// $(".projects").addClass("box4");
 		$(".about-text").hide();
 		$(".resume").hide();
 		$(".contact").hide();
 		$(".projects").show();
+		location.reload();
 	})
 
 	// when click on resume, hide everything else
@@ -53,6 +29,7 @@ $(document).ready(function() {
 		$(".about-text").hide();
 		$(".projects").hide();
 		$(".contact").hide();
+		location.reload();
 	})
 
 	// when click on contact, hide everything else
@@ -61,15 +38,12 @@ $(document).ready(function() {
 		$(".projects").hide();
 		$(".resume").hide();
 		$(".contact").show();
+		location.reload();
 	})
 
 	//check url
 	if (window.location.hash.indexOf("#projects") > -1) {
 		$(".projects").show();
-		// $(".project-box").addClass("box1");
-		// $(".project-box").addClass("box2");
-		// $(".project-box").addClass("box3");
-		// $(".projects").addClass("box4");
 		$(".resume").hide();
 		$(".contact").hide();
 		$(".about-text").hide();
