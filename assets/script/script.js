@@ -47,6 +47,7 @@ $(document).ready(function() {
 		$(".resume").hide();
 		$(".contact").hide();
 		$(".about-text").hide();
+		location.reload();
 	}
 
 	if (window.location.hash.indexOf("#resume") > -1) {
@@ -54,12 +55,14 @@ $(document).ready(function() {
 		$(".projects").hide();
 		$(".contact").hide();
 		$(".about-text").hide();
+		location.reload();
 	}
 	if (window.location.hash.indexOf("#contact") > -1) {
 		$(".contact").show();
 		$(".projects").hide();
 		$(".resume").hide();
 		$(".about-text").hide();
+		location.reload();
 	}
 
 });
