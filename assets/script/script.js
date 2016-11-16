@@ -15,7 +15,7 @@ $(document).ready(function() {
 	})
 
 	// when click on projects, hide everything else
-	$("#project").click(function() {
+	$(".link#p").click(function() {
 		$(".about-text").hide();
 		$(".resume").hide();
 		$(".contact").hide();
@@ -24,7 +24,7 @@ $(document).ready(function() {
 	})
 
 	// when click on resume, hide everything else
-	$("#r").click(function() {
+	$(".link#r").click(function() {
 		$(".resume").show();
 		$(".about-text").hide();
 		$(".projects").hide();
@@ -33,7 +33,7 @@ $(document).ready(function() {
 	})
 
 	// when click on contact, hide everything else
-	$("#c").click(function() {
+	$(".link#c").click(function() {
 		$(".about-text").hide();
 		$(".projects").hide();
 		$(".resume").hide();
@@ -50,14 +50,14 @@ $(document).ready(function() {
 		// location.load();
 	}
 
-	if (window.location.hash.indexOf("#r") > -1) {
+	if (window.location.hash.indexOf("#resume") > -1) {
 		$(".resume").show();
 		$(".projects").hide();
 		$(".contact").hide();
 		$(".about-text").hide();
 		// location.load();
 	}
-	if (window.location.hash.indexOf("#c") > -1) {
+	if (window.location.hash.indexOf("#contact") > -1) {
 		$(".contact").show();
 		$(".projects").hide();
 		$(".resume").hide();
