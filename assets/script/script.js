@@ -15,7 +15,7 @@ $(document).ready(function() {
 	})
 
 	// when click on projects, hide everything else
-	$("#projects").click(function() {
+	$("#project").click(function() {
 		$(".about-text").hide();
 		$(".resume").hide();
 		$(".contact").hide();
@@ -42,12 +42,12 @@ $(document).ready(function() {
 	})
 
 	//check url
-	if (window.location.hash.indexOf("#projects") > -1) {
+	if (window.location.hash.indexOf("#project") > -1) {
 		$(".projects").show();
 		$(".resume").hide();
 		$(".contact").hide();
 		$(".about-text").hide();
-		location.reload();
+		// location.load();
 	}
 
 	if (window.location.hash.indexOf("#resume") > -1) {
@@ -55,14 +55,29 @@ $(document).ready(function() {
 		$(".projects").hide();
 		$(".contact").hide();
 		$(".about-text").hide();
-		location.reload();
+		// location.load();
 	}
 	if (window.location.hash.indexOf("#contact") > -1) {
 		$(".contact").show();
 		$(".projects").hide();
 		$(".resume").hide();
 		$(".about-text").hide();
-		location.reload();
+		// location.load();
+	}
+
+	//checking the validation of url
+	function validateUrl(url)
+	{
+	    var pattern = '^((ht|f)tp(s?)\:\/\/|~/|/)?([\w]+:\w+@)?([a-zA-Z]{1}([\w\-]+\.)+([\w]{2,5}))(:[\d]{1,5})?((/?\w+/)+|/?)(\w+\.[\w]{3,4})?((\?\w+=\w+)?(&\w+=\w+)*)?';
+
+	    if(url.match(pattern))
+	    {
+	        return true;
+	    }
+	    else
+	    {
+	        return false;
+	    }
 	}
 
 });
