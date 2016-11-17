@@ -194,7 +194,7 @@ body {
     -moz-animation-delay: .4s;
     -o-animation: opac .8s;
     -o-animation-delay: .4s;
-    animation: opac .8s both;
+    animation: opac .8s;
     animation-delay: .40s;
 }
 
