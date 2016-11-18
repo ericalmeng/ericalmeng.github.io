@@ -20,15 +20,19 @@ $(document).ready(function() {
 		$(".resume").hide();
 		$(".contact").hide();
 		$(".projects").show();
+	})
+	$(".link#p").click(function() {
 		location.reload();
 	})
-
 	// when click on resume, hide everything else
 	$(".link#r").click(function() {
 		$(".resume").show();
 		$(".about-text").hide();
 		$(".projects").hide();
 		$(".contact").hide();
+		location.reload();
+	})
+	$(".link#r").click(function() {
 		location.reload();
 	})
 
