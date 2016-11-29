@@ -1,8 +1,7 @@
 body {
     color: #3A4750;
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.8;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #fcfcfc;
@@ -25,27 +24,11 @@ body {
   100% { opacity: 0.7; }
 }
 
-@-webkit-keyframes fadein {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-moz-keyframes fadein {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-o-keyframes fadein {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@keyframes fadein {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-.main-container {
+.page-wrapper {
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    max-width: 680px;
 }
 
 ::selection {
@@ -59,53 +42,58 @@ body {
 }
 
 /* css for home page */
-.home-container {
-    max-width: 700px;
-}
 
-.home-title {
+.title-page {
     margin-top: 150px;
     text-align: center;
 }
 
-.home-title h1 {
-    -webkit-animation: fadein .5s both;
-    -webkit-animation-delay: .2s;
-    -moz-animation: fadein .5s both;
-    -moz-animation-delay: .2s;
-    -o-animation: fadein .5s both;
-    -o-animation-delay: .2s;
-    animation: fadein .5s both;
-    animation-delay: .2s;
-    font-size: 34px;
+.title-page h1 {
+    -webkit-transition: opacity 8s ease-in;
+    -webkit-transition-delay: .40s;
+    -moz-transition: opacity 8s ease-in;
+    -moz-transition-delay: .40s;
+    -o-transition: opacity 8s ease-in;
+    -o-transition-delay: .40s;
+    -ms-transition: opacity 8s ease-in;
+    -ms-transition-delay: .40s;
+    transition: opacity 8s ease-in;
+    transition-delay: .40s;
+    font-size: 35px;
     font-weight: 700;
     letter-spacing: 5px;
 }
 
-.home-title h1 a:link {
+.title-page h1.load {
+    opacity: 1;
+}
+
+.title-page h1 a:link {
     text-decoration: none;
     color: #3A4750;
 }
 
-.home-title h1 a:visited {
+.title-page h1 a:visited {
     color: #3A4750;
     text-decoration: none;
 }
 
-.home-title h1 a:hover {
+.title-page h1 a:hover {
     text-decoration: none;
     color: #20272c;
 }
 
-.home-title h2 {
-    -webkit-animation: fadein .5s both;
-    -webkit-animation-delay: .25s;
-    -moz-animation: fadein .5s both;
-    -moz-animation-delay: .25s;
-    -o-animation: fadein .5s both;
-    -o-animation-delay: .25s;
-    animation: fadein .5s both;
-    animation-delay: .25s;
+.title-page h2 {
+    -webkit-transition: opacity 8s ease-in;
+    -webkit-transition-delay: .60s;
+    -moz-transition: opacity 8s ease-in;
+    -moz-transition-delay: .60s;
+    -o-transition: opacity 8s ease-in;
+    -o-transition-delay: .60s;
+    -ms-transition: opacity 8s ease-in;
+    -ms-transition-delay: .60s;
+    transition: opacity 8s ease-in;
+    transition-delay: .60s;
     color: rgba(58,71,80,.6);
     font-size: 18px;
     margin-top: -24px;
@@ -113,46 +101,65 @@ body {
     text-transform: lowercase;
 }
 
-.home-title .links-container {
-    -webkit-animation: fadein .5s both;
-    -webkit-animation-delay: .35s;
-    -moz-animation: fadein .5s both;
-    -moz-animation-delay: .35s;
-    -o-animation: fadein .5s both;
-    -o-animation-delay: .35s;
-    animation: fadein .5s both;
-    animation-delay: .35s;
-    font-size: 18px;
+.title-page h2.load {
+    opacity: 1;
+}
+
+.title-page .nav {
+    -webkit-transition: opacity 8s ease-in;
+    -webkit-transition-delay: .70s;
+    -moz-transition: opacity 8s ease-in;
+    -moz-transition-delay: .70s;
+    -o-transition: opacity 8s ease-in;
+    -o-transition-delay: .80s;
+    -ms-transition: opacity 8s ease-in;
+    -ms-transition-delay: .80s;
+    transition: opacity 8s ease-in;
+    transition-delay: .80s;
+    font-size: 16px;
     font-weight: 500;
     padding: 50px;
 }
 
-.home-title .links-container .link {
-    margin: 0 10px;
-    border-bottom: 1px solid rgba(58,71,80,.4);
+.title-page .nav.load {
+    opacity: 1;
+}
+
+.title-page .nav a {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5px;
+    margin-right: 5px;
     color: inherit;
     text-decoration: none;
+    text-decoration: underline;
 }
 
 .about-text {
-    -webkit-animation: fadein .5s both;
-    -webkit-animation-delay: .55s;
-    -moz-animation: fadein .5s both;
-    -moz-animation-delay: .55s;
-    -o-animation: fadein .5s both;
-    -o-animation-delay: .55s;
-    animation: fadein .5s both;
-    animation-delay: .55s;
+    -webkit-transition: opacity 8s ease-in;
+    -webkit-transition-delay: 1.20s;
+    -moz-transition: opacity 8s ease-in;
+    -moz-transition-delay: 1.20s;
+    -o-transition: opacity 8s ease-in;
+    -o-transition-delay: 1.20s;
+    -ms-transition: opacity 8s ease-in;
+    -ms-transition-delay: 1.20s;
+    transition: opacity 8s ease-in;
+    transition-delay: 1.20s;
     margin-top: 40px;
     padding: 5px;
     text-align: left;
     color: rgba(58,71,80,.7);
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.7;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
     word-spacing: 2px;
+}
+
+.about-text.load {
+    opacity: 1;
 }
 
 /* css for projects */
@@ -179,7 +186,6 @@ body {
     -moz-transition: background 0.3s, color 0.3s;
     -o-transition: background 0.3s, color 0.3s;
     transition: background 0.3s, color 0.3s;
-    /*opacity: 0.7;*/
     opacity: 0.7;
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
@@ -295,17 +301,27 @@ body {
 
 /* css for resume */
 .resume {
-    -webkit-animation: fadein .8s both;
-    -webkit-animation-delay: .40s;
-    -moz-animation: fadein .8s both;
-    -moz-animation-delay: .4s;
-    -o-animation: fadein .8s both;
-    -o-animation-delay: .4s;
-    animation: fadein .5s both;
-    animation-delay: .40s;
+    -webkit-transition: opacity 8s ease-in;
+    -webkit-transition-delay: .40s;
+    -moz-transition: opacity 8s ease-in;
+    -moz-transition-delay: .40s;
+    -o-transition: opacity 8s ease-in;
+    -o-transition-delay: .40s;
+    -ms-transition: opacity 8s ease-in;
+    -ms-transition-delay: .40s;
+    transition: opacity 8s ease-in;
+    transition-delay: .40s;
     display: none;
     text-align: center;
     margin-bottom: 12px;
+}
+
+.resume.load {
+    opacity: 1;
+}
+
+.resume .preview {
+    margin-top: 20px;
 }
 
 .resume_button {
@@ -314,7 +330,10 @@ body {
   padding: 10px 30px;
   text-align: center;
   display: inline-block;
-  margin: 4px 2px;
+  margin-top: 56px;
+  margin-bottom: 10px;
+  margin-right: 2px;
+  margin-left: 2px;
   border-radius: 500px;
   background-color: #d7dadc;
   }
@@ -344,37 +363,55 @@ body {
 }
 
 .link1 {
-    -webkit-animation: fadein .8s both;
-    -webkit-animation-delay: .40s;
-    -moz-animation: fadein .8s both;
-    -moz-animation-delay: .4s;
-    -o-animation: fadein .8s both;
-    -o-animation-delay: .4s;
-    animation: fadein .8s both;
-    animation-delay: .40s;
+    -webkit-transition: opacity 8s ease-in;
+    -webkit-transition-delay: .40s;
+    -moz-transition: opacity 8s ease-in;
+    -moz-transition-delay: .40s;
+    -o-transition: opacity 8s ease-in;
+    -o-transition-delay: .40s;
+    -ms-transition: opacity 8s ease-in;
+    -ms-transition-delay: .40s;
+    transition: opacity 8s ease-in;
+    transition-delay: .40s;
+}
+
+.contact .link1.load {
+    opacity: 1;
 }
 
 .link2 {
-    -webkit-animation: fadein .8s both;
-    -webkit-animation-delay: .80s;
-    -moz-animation: fadein .8s both;
-    -moz-animation-delay: .8s;
-    -o-animation: fadein .8s both;
-    -o-animation-delay: .8s;
-    animation: fadein .8s both;
-    animation-delay: .80s;
+    -webkit-transition: opacity 8s ease-in;
+    -webkit-transition-delay: .80s;
+    -moz-transition: opacity 8s ease-in;
+    -moz-transition-delay: .80s;
+    -o-transition: opacity 8s ease-in;
+    -o-transition-delay: .80s;
+    -ms-transition: opacity 8s ease-in;
+    -ms-transition-delay: .80s;
+    transition: opacity 8s ease-in;
+    transition-delay: .80s;
+}
+
+.contact .link2.load {
+    opacity: 1;
 }
 
 .link3 {
-    -webkit-animation: fadein .8s both;
-    -webkit-animation-delay: 1.20s;
-    -moz-animation: fadein .8s both;
-    -moz-animation-delay: 1.2s;
-    -o-animation: fadein .8s both;
-    -o-animation-delay: 1.2s;
-    animation: fadein .8s both;
-    animation-delay: 1.20s;
+    -webkit-transition: opacity 8s ease-in;
+    -webkit-transition-delay: 1.20s;
+    -moz-transition: opacity 8s ease-in;
+    -moz-transition-delay: 1.20s;
+    -o-transition: opacity 8s ease-in;
+    -o-transition-delay: 1.20s;
+    -ms-transition: opacity 8s ease-in;
+    -ms-transition-delay: 1.20s;
+    transition: opacity 8s ease-in;
+    transition-delay: 1.20s;
     margin-bottom: 24px;
+}
+
+.contact .link3.load {
+    opacity: 1;
 }
 
 .contact h1{
@@ -426,11 +463,11 @@ body {
     transition: 100ms;
 }
 
-.home-social_media a.link.icon-link.icon1 {
+.home-social_media a.lk.icon-link.icon1 {
   margin-left: 42px;
 }
 
-.home-social_media a.link.icon-link:hover {
+.home-social_media a.lk.icon-link:hover {
     opacity: 1;
 }
 

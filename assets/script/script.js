@@ -1,43 +1,48 @@
 $(document).ready(function() {
  // all your jQuery code goes in here!
 
- 	//add class for social media
+ 	//add class
  	$(".home-social_media").addClass("clear");
+ 	$(".title-page h1").addClass("load");
+ 	$(".title-page h2").addClass("load");
+ 	$(".title-page .nav").addClass("load");
+ 	$(".about-text").addClass("load");
+ 	$(".resume").addClass("load");
+ 	$(".contact .link1").addClass("load");
+ 	$(".contact .link2").addClass("load");
+ 	$(".contact .link3").addClass("load");
 	
  	//hovering in nav
-	$(".home-title .links-container .link").hover(function() {
-		$(this).css("border-bottom", "1px solid #3A4750");
-		$(this).css("color", "#3A4750");
+	$(".title-page .nav a").hover(function() {
+		$(this).css("color", "#20272c");
 		}, function() {
-		$(this).css("border-bottom", "1px solid rgba(58,71,80,.4)");
 		$(this).css("color", "#3A4750");
-		$(this).css("text-decoration", "none");
 	})
 
 	// when click on projects, hide everything else
-	$(".link#p").click(function() {
+	$(".lk#p").click(function() {
 		$(".about-text").hide();
 		$(".resume").hide();
 		$(".contact").hide();
 		$(".projects").show();
 	})
-	$(".link#p").click(function() {
+	$(".lk#p").click(function() {
 		location.reload();
 	})
 	// when click on resume, hide everything else
-	$(".link#r").click(function() {
+	$(".lk#r").click(function() {
 		$(".resume").show();
 		$(".about-text").hide();
 		$(".projects").hide();
 		$(".contact").hide();
 		location.reload();
 	})
-	$(".link#r").click(function() {
+	$(".lk#r").click(function() {
 		location.reload();
 	})
 
 	// when click on contact, hide everything else
-	$(".link#c").click(function() {
+	$(".lk#c").click(function() {
 		$(".about-text").hide();
 		$(".projects").hide();
 		$(".resume").hide();
