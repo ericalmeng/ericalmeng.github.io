@@ -33,12 +33,12 @@ body {
 
 ::selection {
     background: #3A4750;
-    color: #ebeced;
+    color: #fcfcfc;
 }
 
 ::-moz-selection {
     background: #3A4750;
-    color: #ebeced;
+    color: #fcfcfc;
 }
 
 /* css for home page */
@@ -97,8 +97,9 @@ body {
     color: rgba(58,71,80,.6);
     font-size: 18px;
     margin-top: -24px;
-    letter-spacing: 8px;
+    letter-spacing: 10px;
     text-transform: lowercase;
+    margin-bottom: 30px;
 }
 
 .title-page h2.load {
@@ -450,6 +451,7 @@ body {
 
 /* css for social media icons */
 .home-social_media {
+    margin-top: 60px;
     padding-top: 40px;
     margin-bottom: 25px;
     text-align: center;
