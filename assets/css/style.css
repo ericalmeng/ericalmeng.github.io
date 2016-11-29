@@ -295,8 +295,8 @@ body {
     font-size: 12px;
     color: #535353;
     letter-spacing: 2px;
-    max-height: 150px;
-/*    overflow: scroll;*/
+    max-height: 140px;
+    overflow: scroll;
 }
 
 /* css for resume */
