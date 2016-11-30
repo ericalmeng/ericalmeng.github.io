@@ -487,10 +487,6 @@ body {
     transition: 100ms;
 }
 
-.home-social_media .lk.icon-link.icon1 {
-  margin-left: 22px;
-}
-
 .home-social_media a:visited {
     color: #20272c;
     text-decoration: none;
