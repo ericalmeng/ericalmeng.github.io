@@ -48,7 +48,7 @@ body {
     text-align: center;
 }
 
-.title-page h1 {
+.title-page .name {
     -webkit-transition: opacity 8s ease-in;
     -webkit-transition-delay: .40s;
     -moz-transition: opacity 8s ease-in;
@@ -62,28 +62,29 @@ body {
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 5px;
+    margin-bottom: 15px;
 }
 
-.title-page h1.load {
+.title-page .name.load {
     opacity: 1;
 }
 
-.title-page h1 a:link {
+.title-page .name a:link {
     text-decoration: none;
     color: #3A4750;
 }
 
-.title-page h1 a:visited {
+.title-page .name a:visited {
     color: #3A4750;
     text-decoration: none;
 }
 
-.title-page h1 a:hover {
+.title-page .name a:hover {
     text-decoration: none;
     color: #20272c;
 }
 
-.title-page h2 {
+.title-page .name-description {
     -webkit-transition: opacity 8s ease-in;
     -webkit-transition-delay: .60s;
     -moz-transition: opacity 8s ease-in;
@@ -100,9 +101,10 @@ body {
     letter-spacing: 10px;
     text-transform: lowercase;
     margin-bottom: 30px;
+    font-weight: 500;
 }
 
-.title-page h2.load {
+.title-page .name-description.load {
     opacity: 1;
 }
 
@@ -117,7 +119,7 @@ body {
     -ms-transition-delay: .80s;
     transition: opacity 8s ease-in;
     transition-delay: .80s;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     padding: 50px;
 }
@@ -126,14 +128,18 @@ body {
     opacity: 1;
 }
 
+.container div {
+    display: inline-block;
+}
+
 .title-page .nav a {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 5px;
     margin-right: 5px;
     color: inherit;
-    text-decoration: none;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .about-text {
@@ -415,11 +421,17 @@ body {
     opacity: 1;
 }
 
-.contact h1{
+.contact .contact-title{
   font-size: 22px;
   font-weight: 500;
   text-decoration: underline;
   opacity: 0.8;
+  display: block;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
 
 .contact-buttom {
