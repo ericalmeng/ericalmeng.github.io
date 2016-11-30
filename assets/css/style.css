@@ -95,7 +95,8 @@ body {
     -ms-transition-delay: .60s;
     transition: opacity 8s ease-in;
     transition-delay: .60s;
-    color: rgba(58,71,80,.6);
+    color: rgb(58, 71, 80);
+    opacity: 0.6;
     font-size: 18px;
     margin-top: -24px;
     letter-spacing: 10px;
@@ -156,7 +157,8 @@ body {
     margin-top: 40px;
     padding: 5px;
     text-align: left;
-    color: rgba(58,71,80,.7);
+    color: rgb(58, 71, 80);
+    opacity: 0.7;
     font-size: 17px;
     line-height: 1.7;
     width: 600px;
