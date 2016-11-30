@@ -462,6 +462,10 @@ body {
 }
 
 /* css for social media icons */
+#social div {
+    display: inline-block;
+}
+
 .home-social_media {
     margin-top: 60px;
     padding-top: 40px;
@@ -483,17 +487,17 @@ body {
     transition: 100ms;
 }
 
-.home-social_media a.lk.icon-link.icon1 {
-  margin-left: 42px;
-}
-
-.home-social_media a.lk.icon-link:hover {
-    opacity: 1;
+.home-social_media .lk.icon-link.icon1 {
+  margin-left: 22px;
 }
 
 .home-social_media a:visited {
     color: #20272c;
     text-decoration: none;
+}
+
+.home-social_media a:hover {
+    opacity: 0.8;
 }
 
 /* for a smaller resolution */
