@@ -285,7 +285,7 @@ body {
     -webkit-transition: linear 0.5s;
     -moz-transition: linear 0.5s;
     -o-transition: linear 0.5s;
-    transition: linear 0.5s; 
+    transition: linear 0.5s;
 }
 
 .box-title {
@@ -350,7 +350,7 @@ body {
 .resume a:link{
     text-decoration: none;
     color: #4d5961;
-} 
+}
 
 .resume a:visited {
     color: #20272c;
@@ -361,7 +361,7 @@ body {
     text-decoration: none;
     color: #d7dadc;
     background-color: #3a4750;
-} 
+}
 
 
 /* css for contact */
@@ -457,7 +457,7 @@ body {
     text-decoration: none;
     color: #d7dadc;
     background-color: #3a4750;
-} 
+}
 
 .contact-buttom.gap {
   margin-bottom: 20px;
@@ -606,7 +606,7 @@ body {
     font-size: 12px;
     max-width: 64%;
   }
-  
+
 }
 
 @media (min-width: 691px) and (max-width: 720px) {

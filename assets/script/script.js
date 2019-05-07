@@ -11,7 +11,7 @@ $(document).ready(function() {
  	$(".contact .link1").addClass("load");
  	$(".contact .link2").addClass("load");
  	$(".contact .link3").addClass("load");
-	
+
  	//hovering in nav
 	$(".title-page .nav a").hover(function() {
 		$(this).css("color", "#20272c");
@@ -27,7 +27,7 @@ $(document).ready(function() {
 		$(".projects").show();
 	})
 	$(".lk#p").click(function() {
-		location.reload();
+		// location.reload();
 	})
 	// when click on resume, hide everything else
 	$(".lk#r").click(function() {
@@ -35,10 +35,10 @@ $(document).ready(function() {
 		$(".about-text").hide();
 		$(".projects").hide();
 		$(".contact").hide();
-		location.reload();
+		// location.reload();
 	})
 	$(".lk#r").click(function() {
-		location.reload();
+		// location.reload();
 	})
 
 	// when click on contact, hide everything else
@@ -47,7 +47,7 @@ $(document).ready(function() {
 		$(".projects").hide();
 		$(".resume").hide();
 		$(".contact").show();
-		location.reload();
+		// location.reload();
 	})
 
 	//check url
