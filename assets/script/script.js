@@ -26,19 +26,12 @@ $(document).ready(function() {
 		$(".contact").hide();
 		$(".projects").show();
 	})
-	$(".lk#p").click(function() {
-		// location.reload();
-	})
 	// when click on resume, hide everything else
 	$(".lk#r").click(function() {
 		$(".resume").show();
 		$(".about-text").hide();
 		$(".projects").hide();
 		$(".contact").hide();
-		// location.reload();
-	})
-	$(".lk#r").click(function() {
-		// location.reload();
 	})
 
 	// when click on contact, hide everything else
@@ -47,7 +40,6 @@ $(document).ready(function() {
 		$(".projects").hide();
 		$(".resume").hide();
 		$(".contact").show();
-		// location.reload();
 	})
 
 	//check url
@@ -56,7 +48,6 @@ $(document).ready(function() {
 		$(".resume").hide();
 		$(".contact").hide();
 		$(".about-text").hide();
-		// location.load();
 	}
 
 	if (window.location.hash.indexOf("#resume") > -1) {
@@ -64,14 +55,12 @@ $(document).ready(function() {
 		$(".projects").hide();
 		$(".contact").hide();
 		$(".about-text").hide();
-		// location.load();
 	}
 	if (window.location.hash.indexOf("#contact") > -1) {
 		$(".contact").show();
 		$(".projects").hide();
 		$(".resume").hide();
 		$(".about-text").hide();
-		// location.load();
 	}
 
 	//checking the validation of url
